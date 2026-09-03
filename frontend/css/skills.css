@@ -1,0 +1,35 @@
+/* ── SKILLS ── */
+#skills{background:var(--bg)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:3.5rem;max-width:1000px}
+.skill-card{
+background:var(--card);border:1.5px solid var(--border);
+border-radius:var(--radius-lg);padding:1.75rem;
+transition:all .25s;position:relative;overflow:hidden;
+}
+.skill-card::before{
+content:'';position:absolute;top:0;left:0;right:0;height:3px;
+background:var(--accent);transform:scaleX(0);transition:transform .3s;transform-origin:left;
+}
+.skill-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.skill-card:hover::before{transform:scaleX(1)}
+.skill-icon{
+width:60px;height:60px;border-radius:16px;
+background:#fff;
+display:flex;align-items:center;justify-content:center;
+margin-bottom:1.25rem;font-size:1.5rem;
+overflow:hidden;border:1.5px solid var(--border);
+}
+.skill-icon img{width:38px;height:38px;object-fit:contain}
+.skill-name{font-weight:800;font-size:1rem;margin-bottom:.35rem}
+.skill-desc{font-size:.83rem;color:var(--text2);line-height:1.55}
+.skill-bar{
+height:4px;background:var(--bg3);border-radius:999px;
+margin-top:1rem;overflow:hidden;
+}
+.skill-fill{
+height:100%;border-radius:999px;background:var(--accent);
+transition:width 1.2s cubic-bezier(.34,1.56,.64,1);width:0;
+}
+.skill-card.visible .skill-fill{width:var(--w)}
+.skill-pct{font-size:.72rem;color:var(--text3);margin-top:.4rem;font-weight:600}
+
