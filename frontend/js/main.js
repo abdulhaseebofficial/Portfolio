@@ -33,28 +33,33 @@ async function handleSubmit(e){
 }
 
 /* ─── FEATURED PROJECT LINKS ─── */
-const featuredProjectRepos = [
-  'https://github.com/abdulhaseebofficial/hostelwallet',
-  'https://github.com/abdulhaseebofficial/cv-analyzer-pro',
-  'https://github.com/abdulhaseebofficial/query-assistant'
+const featuredProjects = [
+  { repo: 'https://github.com/abdulhaseebofficial/hostelwallet', live: 'https://hostelwallet.vercel.app' },
+  { repo: 'https://github.com/abdulhaseebofficial/cv-analyzer-pro', live: 'https://cv-analyzer-pro-sigma.vercel.app' },
+  { repo: 'https://github.com/abdulhaseebofficial/query-assistant', live: 'https://sql-assistant-ai.vercel.app' }
 ];
 
 document.querySelectorAll('.project-card').forEach((card, index) => {
-  const repo = featuredProjectRepos[index];
-  if (!repo) return;
+  const project = featuredProjects[index];
+  if (!project) return;
 
   card.setAttribute('role', 'link');
   card.setAttribute('tabindex', '0');
-  card.querySelectorAll('a').forEach(link => {
-    link.href = repo;
+  const titleLink = card.querySelector('.project-title a');
+  const liveLink = card.querySelector('.project-link.primary');
+  const repoLink = card.querySelector('.project-link.secondary');
+  if (titleLink) titleLink.href = project.repo;
+  if (liveLink) liveLink.href = project.live;
+  if (repoLink) repoLink.href = project.repo;
+  [titleLink, liveLink, repoLink].filter(Boolean).forEach(link => {
     link.target = '_blank';
     link.rel = 'noopener';
   });
 
   card.addEventListener('click', event => {
-    if (!event.target.closest('a')) window.open(repo, '_blank', 'noopener');
+    if (!event.target.closest('a')) window.open(project.repo, '_blank', 'noopener');
   });
   card.addEventListener('keydown', event => {
-    if (event.key === 'Enter') window.open(repo, '_blank', 'noopener');
+    if (event.key === 'Enter') window.open(project.repo, '_blank', 'noopener');
   });
 });
