@@ -54,11 +54,15 @@ flex-shrink:0;font-size:1.25rem;
 .contact-label{font-size:.72rem;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;font-weight:700}
 .contact-value{font-weight:600;font-size:.88rem}
 .meeting-card{
-background:var(--bg3);border:1.5px solid var(--border);
-border-radius:var(--radius);padding:1.5rem;margin-top:.5rem;
+background:linear-gradient(145deg,var(--bg3),var(--bg2));border:1.5px solid var(--border);
+border-radius:var(--radius);padding:1.5rem;margin-top:.5rem;box-shadow:var(--shadow);
 }
 .meeting-title{font-weight:700;font-size:.95rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
-.meeting-desc{font-size:.83rem;color:var(--text2);margin-bottom:1rem}
+.meeting-icon{width:34px;height:34px;border-radius:10px;background:var(--accent-light);display:inline-flex;align-items:center;justify-content:center}
+.meeting-desc{font-size:.83rem;color:var(--text2);margin-bottom:1rem;line-height:1.6}
+.meeting-details{display:grid;gap:.45rem;margin-bottom:1.2rem;color:var(--text2);font-size:.78rem;font-weight:600}
+.meeting-details span::first-letter{color:var(--accent)}
+.meeting-btn{width:100%;justify-content:center}
 .contact-form{
 background:var(--bg3);border:1.5px solid var(--border);
 border-radius:var(--radius-lg);padding:2.25rem;
@@ -108,4 +112,3 @@ font-size:1.1rem;transition:all .2s;
 .footer-bottom{border-top:1px solid #1C1A17;padding-top:1.75rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;flex-wrap:wrap;gap:.5rem}
 .footer-bottom a{transition:color .2s}
 .footer-bottom a:hover{color:#fff}
-
