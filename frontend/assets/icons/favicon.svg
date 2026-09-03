@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Abdul Haseeb</title>
+  <defs><linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#3568EE"/><stop offset="1" stop-color="#12358F"/></linearGradient></defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <path d="M10 45 22.2 17h6.1l12.2 28h-7.1l-2.5-6.2H19.2L16.7 45H10Zm11.6-12.2h6.9L25 24l-3.4 8.8Z" fill="#fff"/>
+  <path d="M41.5 17H48v28h-6.5V34.2h-7.8v-6h7.8V17Z" fill="#FF7A3D"/>
+</svg>

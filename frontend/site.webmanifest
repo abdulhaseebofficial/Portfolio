@@ -1,0 +1,9 @@
+{
+  "name": "Abdul Haseeb — Data & Business Analytics",
+  "short_name": "Abdul Haseeb",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b4fd8",
+  "icons": [{ "src": "/assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
