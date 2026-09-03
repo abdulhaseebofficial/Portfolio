@@ -31,3 +31,30 @@ async function handleSubmit(e){
     btn.disabled = false;
   }
 }
+
+/* ─── FEATURED PROJECT LINKS ─── */
+const featuredProjectRepos = [
+  'https://github.com/abdulhaseebofficial/hostelwallet',
+  'https://github.com/abdulhaseebofficial/cv-analyzer-pro',
+  'https://github.com/abdulhaseebofficial/query-assistant'
+];
+
+document.querySelectorAll('.project-card').forEach((card, index) => {
+  const repo = featuredProjectRepos[index];
+  if (!repo) return;
+
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  card.querySelectorAll('a').forEach(link => {
+    link.href = repo;
+    link.target = '_blank';
+    link.rel = 'noopener';
+  });
+
+  card.addEventListener('click', event => {
+    if (!event.target.closest('a')) window.open(repo, '_blank', 'noopener');
+  });
+  card.addEventListener('keydown', event => {
+    if (event.key === 'Enter') window.open(repo, '_blank', 'noopener');
+  });
+});

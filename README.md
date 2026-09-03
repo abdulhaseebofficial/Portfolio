@@ -5,7 +5,7 @@
 
   **Data & Business Analytics professional turning scattered data into clear business decisions.**
 
-  [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-1B4FD8?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-two-rouge-ytjn6dd4rd.vercel.app)
+  [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-1B4FD8?style=for-the-badge&logo=vercel&logoColor=white)](https://abdulhaseebkashmiri.vercel.app)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulhaseebkashmiri/)
   [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@abdulhaseebkashmiriofficial)
 
